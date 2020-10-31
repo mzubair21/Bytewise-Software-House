@@ -1,0 +1,140 @@
+@import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+.nav-bar{
+	background: white;
+width: 100%;
+height:124px;
+display: inline-flex;
+}
+nav .contact{
+	background: black;
+	width: 100%;
+	color: white;
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 3px;
+	font-weight: bolder;
+	padding-left:2.5em;
+}
+.nav-bar .logo{
+	background: white;
+	height: 100px;
+	width: 125px;
+	padding:12px 0;
+	min-width: 100px;
+	margin-left: 50px;
+}
+/*--- Only for keydev Logo----*/
+.logo img{
+	padding-top: 10px;
+	width: 120px;
+	height: 80%;
+}
+.nav-buttons{
+background:transparent;
+min-width: 730px;
+width: 69.7%;
+border-right: 1px solid rgba(0,0,0,0.1);
+}
+.nav-buttons ul{
+	display: flex;
+	min-width: 640px;
+	width: 76.5%;
+	margin-left: 12.5%;
+	justify-content: space-between;
+}
+.nav-buttons ul li{
+	margin-right: 20px;
+	font-size: 0.71em;
+	list-style: none;
+	text-decoration: none;
+	color: #303133;
+	font-family:  "SF Pro Display",sans-serif;
+	text-transform: uppercase;
+	font-weight:bolder;
+	padding: 4.9em 0px;
+}
+a{
+	text-decoration: none;
+}
+.nav-buttons ul li:hover{
+	color: #979899;
+}
+.nav-buttons .active{
+	color: #979899;
+}
+nav .social{
+	min-width: 140px;
+	margin: auto;
+	justify-content: space-between;
+	
+}
+nav .i{
+	margin-right: 9.5%;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------*/
+.footer{
+		background: black;
+		color: white;
+		display: flex;
+		height: inherit;
+	}
+.footer p{
+	padding: 20px;
+	font-size: 13px;
+	margin-left: 6.5%;
+	padding-bottom: px;
+}
+.footer .social{
+	display: inline;
+	width:15%;
+	padding: 20px;
+	margin: auto;
+	margin-right: 7%;
+}
+.footer .i{
+	margin-right: 9.5%;
+	font-size: 1em;
+}
+.i:nth-of-type(5){
+	margin: 0;
+}
+@media only screen and (max-width: 959px){
+	.footer{
+		display: grid;
+		justify-content: center;
+	}
+	.footer p{
+		padding: 20px 0;
+		font-size: 12px;
+		width:100%;;
+		margin: 0;
+		text-align-last: center;
+	}
+	.footer .social{
+		margin: 0px;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-left: 0px; 
+		width: 100%;
+		text-align: center;
+	}
+	nav{
+	display: none;
+}
+	
+}
