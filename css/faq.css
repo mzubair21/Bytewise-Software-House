@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.f-container{
+background: black;
+width: 100%;
+height: inherit;
+}
+.f-text{
+	color: white;
+	padding:10% 0px 5% 8%;
+}
+.f-heading {
+	display: grid;
+	justify-content: left;
+
+}
+.f-heading h2{
+	font-family: 'Poppins';
+	font-size: 2em;
+	padding:20% 0px 16px 0px;
+}
+.underline{
+	width: 140%;
+	background: white;
+	height: 2px;
+}
+.f-text p{
+	font-family:  "SF Pro Display",sans-serif;
+	font-weight:bolder;
+	padding-top: 30px;
+}
+.ques{
+	padding-left: 8%;
+}
+.ques h2{
+	font-family: 'Poppins';
+	padding: 6% 0px 3% 0px;
+	color: #373737;
+}
+.q-container{
+ width: 90%;
+ height:inherit;
+}
+.q-head {
+	text-transform: uppercase;
+ width: 100%;
+ border: 1px solid black;
+ border-left: none;
+ border-right: none;
+font-size: 13px;
+padding: 20px 0px;
+}
+.q-head p{
+	color:black;
+	font-family: 'Poppins';
+	word-spacing: 1.5px;
+}
+.btn{
+	float: right;
+	font-size: 1.25em;
+}
+.rotate{
+	transform: rotateZ(90deg);
+}
+.ans{
+	transition: 1s ease;
+	height: auto;
+	max-height: inherit;
+}
+#con{
+	overflow: hidden;
+	height: 0;
+	transition:height 0.5s;
+}
+.show{
+	transition: 1s ease;
+	height: auto;
+}
+.ans p{
+	color:#848684;
+	font-family:  "SF Pro Display",sans-serif;
+	font-size: 17px;
+	line-height: 1.6em;
+}
+.ans p:nth-of-type(1),.ans p:last-of-type{
+	padding: 2% 0%;
+}
+.ans h2{
+	color: black;
+	font-family:  "SF Pro Display",sans-serif;
+	font-size: 1.25em;
+	letter-spacing: 1px;
+	padding-top: 4.5%;
+	padding-bottom: 15px
+}
+.ans ul li{
+	color:#848684;
+	font-family:  "SF Pro Display",sans-serif;
+	list-style:disc;
+	padding: 5px 0px;
+}
+.ans ul li:last-of-type{
+	padding-bottom: 3%;
+}
+.q-container:last-of-type{
+	padding-bottom: 5%;
+}
