@@ -5,10 +5,14 @@
 	padding: 0;
 	font-family: sans-serif;
 }
+body{
+	height: 100vh;
+	overflow: hidden;
+}
 .f-container{
 background: black;
 width: 100%;
-height: inherit;
+height: auto;
 }
 .f-text{
 	color: white;
@@ -44,7 +48,7 @@ height: inherit;
 }
 .q-container{
  width: 90%;
- height:inherit;
+ height:auto;
 }
 .q-head {
 	text-transform: uppercase;
@@ -70,7 +74,7 @@ padding: 20px 0px;
 .ans{
 	transition: 1s ease;
 	height: auto;
-	max-height: inherit;
+	max-height: auto;
 }
 #con{
 	overflow: hidden;

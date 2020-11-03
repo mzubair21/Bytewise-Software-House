@@ -1,49 +1,51 @@
 @import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
 *{
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 }
 .nav-bar{
-	background: white;
+position: relative;
+background: white;
 width: 100%;
 height:124px;
 display: inline-flex;
 }
-nav .contact{
-	background: black;
-	width: 100%;
-	color: white;
-	font-family: sans-serif;
-	font-size: 12px;
-	padding: 3px;
-	font-weight: bolder;
-	padding-left:2.5em;
+
+.inner-width{
+overflow: hidden;
+position: relative;
+background: white;
+width: 100%;
+height:125px;
+display: inline-flex;
 }
+
 .nav-bar .logo{
 	background: white;
 	height: 100px;
 	width: 125px;
 	padding:12px 0;
 	min-width: 100px;
-	margin-left: 50px;
+	margin-left:5%;
 }
-/*--- Only for keydev Logo----*/
 .logo img{
-	padding-top: 10px;
-	width: 120px;
+	-webkit-filter:invert(87%);
+	padding-top: 7px;
+	padding-left: 15%;
+	width: auto;
 	height: 80%;
 }
 .nav-buttons{
 background:transparent;
-min-width: 730px;
-width: 69.7%;
+width: 78%;
 border-right: 1px solid rgba(0,0,0,0.1);
+overflow: hidden;
 }
 .nav-buttons ul{
 	display: flex;
-	min-width: 640px;
-	width: 76.5%;
+	width: 80.5%;
 	margin-left: 12.5%;
 	justify-content: space-between;
 }
@@ -67,19 +69,41 @@ a{
 .nav-buttons .active{
 	color: #979899;
 }
-nav .social{
-	min-width: 140px;
+.inner-width .social{
+	overflow: hidden;
 	margin: auto;
 	justify-content: space-between;
-	
+	width: 140px;
 }
 nav .i{
 	margin-right: 9.5%;
 }
 
 
-
-
+.menu-toggler{
+	transition:opacity 0s; 
+	background: none;
+	 width: 30px;
+	height: auto;
+	outline: none;
+	border: 0px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: 8%;
+	z-index: 999;
+	position: absolute;
+	opacity: 0;
+}
+.menu-toggler span{
+	 display: block;
+     height: 3px;
+     background: black;
+     margin: 6px 0;
+     position: relative;
+     transition: .3s linear;
+    
+}
 
 
 
@@ -91,7 +115,7 @@ nav .i{
 		background: black;
 		color: white;
 		display: flex;
-		height: inherit;
+		height: auto;
 	}
 .footer p{
 	padding: 20px;
@@ -113,7 +137,67 @@ nav .i{
 .i:nth-of-type(5){
 	margin: 0;
 }
+
 @media only screen and (max-width: 959px){
+	.nav-bar{
+		position: fixed;
+		z-index: 999;
+	}
+	
+	.menu-toggler{
+		cursor: pointer;
+		transition:opacity 1s ; 
+		position: static;
+		opacity: 1;
+	}
+	/*------- Menu-----*/
+	.inner-width{
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 0vh;
+	transition: height 0.8s ease;
+	background-color: rgb(27,29,31);
+	color:white;
+	position: fixed;
+	top: 125px;
+	z-index: 999;
+	}
+.inner-width ul li{
+	text-transform: none;
+	font-family: 'Poppins';
+	font-size: 2em;
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding: 5px 0px;
+}
+.inner-width .nav-buttons{
+	width:100%;
+	height: auto;
+}
+.inner-width ul{
+	display:block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.inner-width .social{
+	font-size: 1.5em;
+	width: 300px;
+	margin: auto;
+	margin-top: 0;
+	padding: 0;
+	text-align: center;
+	padding: 20px;
+}
+/*----------/Menu----*/
+
+	
+	
+	
+	
+/*---------Footer------*/	
 	.footer{
 		display: grid;
 		justify-content: center;
@@ -133,8 +217,8 @@ nav .i{
 		width: 100%;
 		text-align: center;
 	}
-	nav{
-	display: none;
+/*---------Footer------*/
 }
-	
+.hide{
+	height: 100%;
 }

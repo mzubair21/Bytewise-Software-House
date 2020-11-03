@@ -6,7 +6,10 @@
 	font-family: sans-serif;
 	scroll-behavior: smooth;	
 }
-
+body{
+	height: 100vh;
+	overflow: hidden;
+}
 .our-work{
 	  height: 115vh;
 	  overflow: hidden;
@@ -25,7 +28,7 @@
 
 .our-work-container{
 width: 100%;
-height: inherit;
+height: auto;
 transform:rotate(36deg) skew(-20deg,-10deg) scale(1.2) translateX(1.6%);
 }
 
@@ -76,7 +79,7 @@ img{
 }
 .work-display{
 	background:#f7f7f7;
-	height: inherit;
+	height: auto;
 }
 .work-container{
 	display: flex;
@@ -156,7 +159,7 @@ transform:  translateX(1%);
 		width: 100%;
 	}
 	.proj-title{
-		height: inherit;
+		height: auto;
 	}
 	.proj-title h2{
 		font-size: 16px;

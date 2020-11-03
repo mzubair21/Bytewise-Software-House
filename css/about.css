@@ -4,11 +4,13 @@ padding: 0;
 margin: 0;
 font-family: sans-serif;
 }
+body{
+	height: 100vh;
+	overflow: hidden;
+}
+
 
 .about-bg{
-	/*background: url(../images/Dancing-Bulbs.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;*/
 	width: 100%;
 	height: 100vh;
 	position: relative;
@@ -100,7 +102,7 @@ font-family: sans-serif;
 .who-we-are{
 	background: white;
 	width: 100%;
-	height:inherit;
+	height: auto;
 	text-align: center;
 	padding-bottom: 7vh;
 }
@@ -164,7 +166,7 @@ height: 75vh;
 }
 .mission,.approach,.vision,.who-we-are,.our-history{
 		
-		height: inherit;
+		height: auto;
 	}
 
 
@@ -196,7 +198,7 @@ height: 75vh;
 	}
 	.mission,.approach,.vision{
 		
-		height: inherit;
+		height: auto;
 	}
 	.underline{
 		margin: auto;
@@ -207,10 +209,10 @@ height: 75vh;
 	}
 	.who-we-are{
 		margin-bottom: 8%;
-       height: inherit;
+       height: auto;
 	}
 	.our-history{
-		height: inherit;
+		height: auto;
 	}
 	.text1{
 		margin: 0px;
